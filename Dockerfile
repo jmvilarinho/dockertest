@@ -17,6 +17,7 @@ EXPOSE 80
 
 #COPY 000-default.conf /etc/apache2/sites-available
 
+
 RUN ln -sf /proc/self/fd/1 /var/log/apache2/access.log && \
     ln -sf /proc/self/fd/1 /var/log/apache2/error.log
 
